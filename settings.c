@@ -63,7 +63,7 @@ void confirmFlip (struct modes *m) {
 	scanf("%d", &m->rV);
 }
 */
-/*Flips the confirm setting*/
+/*Flips the default to random setting*/
 void dTRFlip (struct modes *m) {
 	m->dTR = !m->dTR;
 }
