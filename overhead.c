@@ -33,7 +33,7 @@ int freeAcc(struct alienData *aD, int (*jT[])(struct alienData*)) {
 	do {
 		if (aD->m->speak) printf("-------\n0 for settings\n1 to write\n"
 			"2 for color, 3 for type, 4 for points\n"
-			"5 for X, 6 for Y, 7 for VX, 8 for VY\n\n-1 to input\n-------\n");
+			"5 for X, 6 for Y, 7 for VX, 8 for VY\n\n-1 to exit\n-------\n");
 		if (aD->m->alienSpeak) alienPrint(aD);
 		scanf("%d", &input);
 		if (input > 0 && input < 9) {
