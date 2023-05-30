@@ -19,7 +19,6 @@ double aRandX(int boolean) {
 		/*Having a Gaussian x spread doesn't seem all too useful*/
 		/*Centered on 0, SD of 15*/
 		value = fmod(boxMuller() * 15.0, 40.0);
-		/*Statistically, value validation not needed but why not*/
 	} else value = rand() % 40 - 20;
 	return value;
 }
@@ -30,7 +29,6 @@ double aRandY(int boolean) {
 	if (boolean) {
 		/*Centered on 20, SD of 5*/
 		value = fmod(boxMuller() * 5.0 + 20, 40.0);
-		/*Statistically, value validation not needed but why not*/
 	} else	value = rand() % 40;
 	return value;
 }
